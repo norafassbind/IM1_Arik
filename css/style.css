@@ -1,0 +1,36 @@
+@font-face {
+    /* Headline Font */
+    font-family: 'SpecialGothicExpandedOne';
+    src: url('fonts/SpecialGothicExpandedOne-Regular.woff2') format('woff2');
+
+    /* Fliesstext Font*/
+    font-family: 'Archivo';
+    src: url('fonts/Archivo-Italic-VariableFont_wdth,wght.woff2') format('woff2');
+}
+
+:root {
+    --color-primary: #DF7474;
+    --color-background-1: #15330D;
+    --color-background-2: #3A5733;
+    --text-color-1: #6B8564;
+    --text-color-2: #9BAC97;
+}
+
+body {
+    background-color: var(--color-background-1);
+}
+
+.hauptnav {
+    background-color: var(--color-background-2);
+    margin: 40px 80px;
+    padding: 40px;
+    border-radius: 30px;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+    }
+}

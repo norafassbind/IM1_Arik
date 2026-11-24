@@ -1,11 +1,13 @@
+/* Headline Font */
 @font-face {
-    /* Headline Font */
     font-family: 'SpecialGothicExpandedOne';
-    src: url('fonts/SpecialGothicExpandedOne-Regular.woff2') format('woff2');
+    src: url('../fonts/SpecialGothicExpandedOne-Regular.woff2') format('woff2');
+}
 
-    /* Fliesstext Font*/
+/* Fliesstext Font*/
+@font-face {
     font-family: 'Archivo';
-    src: url('fonts/Archivo-Italic-VariableFont_wdth,wght.woff2') format('woff2');
+    src: url('../fonts/Archivo-Italic-VariableFont_wdth,wght.woff2') format('woff2');
 }
 
 :root {
@@ -18,9 +20,8 @@
 
 * {
     text-decoration: none;
-    font-family: Archivo, sans-serif;
-    font-size: 20px;
-    color: var(--text-color-2);
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -41,22 +42,34 @@ h3 {
     color: var(--text-color-2);
 }
 
+p {
+    font-family: Archivo, sans-serif;
+    font-size: 20px;
+    color: var(--text-color-2);
+}
+
 body {
     background-color: var(--color-background-1);
 }
 
 .hauptnav {
     background-color: var(--color-background-2);
-    margin: 40px 80px;
-    padding: 40px;
+    margin: 20px 40px;
+    padding: 20px 40px;
     border-radius: 30px;
     display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
+    a {
+        font-family: SpecialGothicExpandedOne, sans-serif;
+        font-size: 35px;
+        color: var(--text-color-2);
+    }
+
     img {
-        height: 52px;
+        height: 40px;
     }
 
     ul {
@@ -69,6 +82,7 @@ body {
 
         img {
             width: 40px;
+            height: 40px;
         }
     }
 }

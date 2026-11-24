@@ -106,8 +106,17 @@ body {
     background-color: transparent;
 }
 
+main {
+    padding: 320px 0 0 0;
+    background-image: url("../bilder/background image_dark.svg");
+    background-repeat: no-repeat;
+}
+
+section {
+    margin: 120px 80px;
+}
+
 .section-style {
-    margin: 40px 80px;
     display: flex;
         align-items: flex-start;
         gap: 155px;
@@ -120,6 +129,24 @@ body {
         gap: 40px;
 }
 
+.cards {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 223px;
+
+    article {
+        background-color: var(--color-background-1);
+        padding: 50px 15px;
+        border-radius: 30px;
+        text-align: center;
+        display: flex;
+            gap: 20px;
+            flex-direction: column;
+    }
+}
+
 .button {
     background-color: var(--color-primary);
     color: var(--color-background-1);
@@ -130,8 +157,25 @@ body {
     width: fit-content;
     font-family: Archivo, sans-serif;
     font-size: 20px;
-    
+}
 
+.bildgalerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    img {
+        border-radius: 30px;
+        height: 648px;
+    }
+    div {
+        display: flex;
+            flex-direction: column;
+            gap: 20px;
+        img {
+            height: 314px;
+        }
+    }
 }
 
 .footer-content {

@@ -7,9 +7,10 @@
 /* Fliesstext Font*/
 @font-face {
     font-family: 'Archivo';
-    src: url('../fonts/Archivo-Italic-VariableFont_wdth,wght.woff2') format('woff2');
+    src: url('../fonts/Archivo-VariableFont_wdth,wght.woff2') format('woff2');
 }
 
+/* Variablen */
 :root {
     --color-primary: #DF7474;
     --color-background-1: #15330D;
@@ -18,16 +19,28 @@
     --text-color-2: #9BAC97;
 }
 
+[data-theme="light"] {
+    --color-primary: #DF7474;
+    --color-background-1: #9BAC97;
+    --color-background-2: #6B8564;
+    --text-color-1: #3A5733;
+    --text-color-2: #15330D;
+}
+
 * {
     text-decoration: none;
     padding: 0;
     margin: 0;
 }
 
+/* Fonts */
 h1 {
     font-family: SpecialGothicExpandedOne, sans-serif;
     font-size: 165px;
     color: var(--color-primary);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 h2 {
@@ -54,8 +67,8 @@ body {
 
 .hauptnav {
     background-color: var(--color-background-2);
-    margin: 20px 40px;
-    padding: 20px 40px;
+    margin: 40px 80px;
+    padding: 40px 80px;
     border-radius: 30px;
     display: flex;
         flex-direction: row;
@@ -83,6 +96,62 @@ body {
         img {
             width: 40px;
             height: 40px;
+        }
+    }
+}
+
+#toggle-theme {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+}
+
+.section-style {
+    margin: 40px 80px;
+    display: flex;
+        align-items: flex-start;
+        gap: 155px;
+}
+
+.section-content {
+    display: flex;
+        width: 665px;
+        flex-direction: column;
+        gap: 40px;
+}
+
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-background-1);
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: fit-content;
+    font-family: Archivo, sans-serif;
+    font-size: 20px;
+    
+
+}
+
+.footer-content {
+    background-color: var(--color-background-2);
+    margin: 40px 80px;
+    padding: 40px 80px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    ul {
+        list-style-type: none;
+
+        a {
+            font-family: Archivo, sans-serif;
+            font-size: 20px;
+            color: var(--text-color-2);
         }
     }
 }

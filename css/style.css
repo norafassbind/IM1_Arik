@@ -16,6 +16,31 @@
     --text-color-2: #9BAC97;
 }
 
+* {
+    text-decoration: none;
+    font-family: Archivo, sans-serif;
+    font-size: 20px;
+    color: var(--text-color-2);
+}
+
+h1 {
+    font-family: SpecialGothicExpandedOne, sans-serif;
+    font-size: 165px;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-family: SpecialGothicExpandedOne, sans-serif;
+    font-size: 90px;
+    color: var(--text-color-2);
+}
+
+h3 {
+    font-family: SpecialGothicExpandedOne, sans-serif;
+    font-size: 35px;
+    color: var(--text-color-2);
+}
+
 body {
     background-color: var(--color-background-1);
 }
@@ -25,12 +50,25 @@ body {
     margin: 40px 80px;
     padding: 40px;
     border-radius: 30px;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    img {
+        height: 52px;
+    }
 
     ul {
         list-style-type: none;
         display: flex;
+            width: 606px;
             flex-direction: row;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
+
+        img {
+            width: 40px;
+        }
     }
 }
